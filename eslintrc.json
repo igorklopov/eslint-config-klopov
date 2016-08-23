@@ -17,8 +17,6 @@
     "sourceType": "module"
   },
   "plugins": [
-    "standard",
-    "promise"
   ],
   "rules": {
     "accessor-pairs": 2,
@@ -350,7 +348,6 @@
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "off",
-    "promise/param-names": 2,
     "quote-props": "off",
     "quotes": [
       "error",
@@ -362,7 +359,7 @@
     "rest-spread-spacing": "error",
     "semi": [
       2,
-      "never"
+      "always"
     ],
     "semi-spacing": [
       2,
@@ -408,18 +405,6 @@
           ","
         ]
       }
-    ],
-    "standard/array-bracket-even-spacing": [
-      2,
-      "either"
-    ],
-    "standard/computed-property-even-spacing": [
-      2,
-      "even"
-    ],
-    "standard/object-curly-even-spacing": [
-      2,
-      "either"
     ],
     "strict": "error",
     "template-curly-spacing": [

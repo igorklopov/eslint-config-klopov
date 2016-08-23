@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-klopov",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "main": "index.js",
   "bin": {
     "eslint-klopov": "bin.js"

@@ -73,6 +73,10 @@
     "single"
   ],
   "require-jsdoc": "off",
+  "semi": [
+    2,
+    "always"
+  ],
   "sort-keys": "off",
   "sort-vars": "off",
   "space-before-function-paren": [

@@ -19,14 +19,20 @@ for (const o of overrideList) {
     o + ' not found in rulesList');
 }
 
+const newRules = {};
+
 for (const r of rulesList) {
   const o = override[r];
   let s = standard.rules[r];
-  assert(s !== 0, 'Disabled rule in "standard" not expected');
+  if (s === 0 || s === 'off')
+    assert(false, 'Disabled rule in "standard" not expected');
   if (o === 'off' && s) console.log(
     `WARN: Standard is not expected to be stricter: ${r}`);
-  standard.rules[r] = o || s || 'error';
+  newRules[r] = o || s || 'error';
 }
+
+standard.rules = newRules;
+standard.plugins = [];
 
 fs.writeFileSync('eslintrc.json',
   stringify(standard, { space: 2 }) + '\n'
