@@ -17,6 +17,7 @@
   "guard-for-in": "off",
   "id-length": "off",
   "init-declarations": "off",
+  "line-comment-position": "off",
   "max-len": "off",
   "max-lines": "off",
   "max-nested-callbacks": "off",

@@ -13,7 +13,7 @@
       "experimentalObjectRestSpread": true,
       "jsx": true
     },
-    "ecmaVersion": 6,
+    "ecmaVersion": 7,
     "sourceType": "module"
   },
   "plugins": [
@@ -53,6 +53,7 @@
         "properties": "never"
       }
     ],
+    "class-methods-use-this": "error",
     "comma-dangle": [
       2,
       "never"
@@ -127,8 +128,10 @@
         "before": true
       }
     ],
+    "line-comment-position": "off",
     "linebreak-style": "error",
     "lines-around-comment": "error",
+    "lines-around-directive": "error",
     "max-depth": "error",
     "max-len": "off",
     "max-lines": "off",
@@ -251,6 +254,7 @@
     "no-restricted-globals": "error",
     "no-restricted-imports": "error",
     "no-restricted-modules": "error",
+    "no-restricted-properties": "error",
     "no-restricted-syntax": "error",
     "no-return-assign": [
       2,
@@ -347,6 +351,7 @@
     ],
     "prefer-arrow-callback": "off",
     "prefer-const": "off",
+    "prefer-numeric-literals": "error",
     "prefer-reflect": "off",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
@@ -422,6 +427,7 @@
       }
     ],
     "strict": "error",
+    "symbol-description": "error",
     "template-curly-spacing": [
       2,
       "never"
