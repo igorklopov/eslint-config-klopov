@@ -5,6 +5,7 @@
   ],
   "array-callback-return": "off",
   "arrow-parens": "off",
+  "class-methods-use-this": "off",
   "consistent-return": "off",
   "dot-location": [
     "error",
