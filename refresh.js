@@ -7,7 +7,7 @@ const assert = require('assert');
 const standard = require('eslint-config-standard');
 const stringify = require('json-stable-stringify');
 const override = require('./override.json');
-const defaults = require('eslint').linter.defaults();
+const defaults = require('eslint/conf/eslint-recommended.js');
 
 fs.writeFileSync('override.json',
   stringify(override, { space: 2 }) + '\n'
@@ -26,10 +26,11 @@ const newRules = {};
 for (const r of rulesList) {
   const o = override[r];
   let s = standard.rules[r];
-  if (s === 0 || s === 'off')
-    assert(false, 'Disabled rule in "standard" not expected');
-  if (o === 'off' && s) console.log(
-    `WARN: Standard is not expected to be stricter: ${r}`);
+  if (Array.isArray(s)) s = s[0];
+  if (s && s !== 'error')
+    assert(false, `Standard is not expected to have ${r}=${s}`);
+  if (s && o === 'off') console.log(
+    `WARN: Standard is not expected to be stricter: ${r}=${s}`);
   newRules[r] = o || s || 'error';
 }
 

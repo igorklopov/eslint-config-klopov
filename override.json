@@ -1,12 +1,35 @@
 {
+  "array-bracket-newline": "off",
   "array-bracket-spacing": [
     "error",
     "always"
   ],
   "array-callback-return": "off",
-  "arrow-parens": "off",
+  "array-element-newline": "off",
+  "arrow-parens": [
+    "error",
+    "always"
+  ],
+  "brace-style": [
+    "error",
+    "1tbs",
+    {
+      "allowSingleLine": true
+    }
+  ],
+  "camelcase": [
+    "error",
+    {
+      "properties": "never"
+    }
+  ],
+  "capitalized-comments": "off",
   "class-methods-use-this": "off",
   "consistent-return": "off",
+  "curly": [
+    "error",
+    "multi-line"
+  ],
   "dot-location": [
     "error",
     "property"
@@ -16,9 +39,16 @@
   "generator-star-spacing": "off",
   "global-require": "off",
   "guard-for-in": "off",
+  "handle-callback-err": [
+    "error",
+    "error"
+  ],
   "id-length": "off",
+  "indent": "off",
+  "indent-legacy": "off",
   "init-declarations": "off",
   "line-comment-position": "off",
+  "max-depth": "off",
   "max-len": "off",
   "max-lines": "off",
   "max-nested-callbacks": "off",
@@ -28,20 +58,31 @@
   "newline-after-var": "off",
   "newline-before-return": "off",
   "newline-per-chained-call": "off",
+  "no-await-in-loop": "off",
   "no-bitwise": "off",
   "no-console": "off",
   "no-constant-condition": "off",
   "no-continue": "off",
   "no-else-return": "off",
+  "no-empty": "off",
   "no-empty-function": "off",
+  "no-extra-parens": "off",
   "no-inline-comments": "off",
   "no-lonely-if": "off",
   "no-magic-numbers": "off",
   "no-mixed-operators": "off",
+  "no-multi-assign": "off",
+  "no-multi-spaces": [
+    "error",
+    {
+      "ignoreEOLComments": true
+    }
+  ],
   "no-negated-condition": "off",
   "no-param-reassign": "off",
   "no-process-env": "off",
   "no-process-exit": "off",
+  "no-return-await": "off",
   "no-sync": "off",
   "no-ternary": "off",
   "no-undefined": "off",
@@ -64,9 +105,15 @@
   ],
   "object-property-newline": "off",
   "object-shorthand": "off",
+  "one-var": "off",
   "one-var-declaration-per-line": "off",
+  "operator-linebreak": "off",
+  "padded-blocks": [
+    "error",
+    "never"
+  ],
   "prefer-arrow-callback": "off",
-  "prefer-const": "off",
+  "prefer-destructuring": "off",
   "prefer-reflect": "off",
   "prefer-template": "off",
   "quote-props": "off",
@@ -84,6 +131,10 @@
   "space-before-function-paren": [
     "error",
     "always"
+  ],
+  "wrap-iife": [
+    2,
+    "inside"
   ],
   "wrap-regex": "off"
 }
