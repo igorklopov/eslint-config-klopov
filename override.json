@@ -60,6 +60,12 @@
   "newline-per-chained-call": "off",
   "no-await-in-loop": "off",
   "no-bitwise": "off",
+  "no-confusing-arrow": [
+    "error",
+    {
+      "allowParens": true
+    }
+  ],
   "no-console": "off",
   "no-constant-condition": "off",
   "no-continue": "off",
@@ -113,6 +119,12 @@
     "never"
   ],
   "prefer-arrow-callback": "off",
+  "prefer-const": [
+    "error",
+    {
+      "destructuring": "all"
+    }
+  ],
   "prefer-destructuring": "off",
   "prefer-reflect": "off",
   "prefer-template": "off",

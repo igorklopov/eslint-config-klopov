@@ -120,7 +120,12 @@
     "no-class-assign": "error",
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
-    "no-confusing-arrow": "error",
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": true
+      }
+    ],
     "no-console": "off",
     "no-const-assign": "error",
     "no-constant-condition": "off",
@@ -276,7 +281,12 @@
     ],
     "padding-line-between-statements": "error",
     "prefer-arrow-callback": "off",
-    "prefer-const": "error",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
     "prefer-destructuring": "off",
     "prefer-numeric-literals": "error",
     "prefer-promise-reject-errors": "error",
