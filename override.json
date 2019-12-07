@@ -25,6 +25,7 @@
   ],
   "capitalized-comments": "off",
   "class-methods-use-this": "off",
+  "complexity": "off",
   "consistent-return": "off",
   "curly": [
     "error",
@@ -36,7 +37,8 @@
   ],
   "func-names": "off",
   "func-style": "off",
-  "generator-star-spacing": "off",
+  "function-call-argument-newline": "off",
+  "function-paren-newline": "off",
   "global-require": "off",
   "guard-for-in": "off",
   "handle-callback-err": [
@@ -44,6 +46,7 @@
     "error"
   ],
   "id-length": "off",
+  "implicit-arrow-linebreak": "off",
   "indent": "off",
   "indent-legacy": "off",
   "init-declarations": "off",
@@ -51,9 +54,11 @@
   "max-depth": "off",
   "max-len": "off",
   "max-lines": "off",
+  "max-lines-per-function": "off",
   "max-nested-callbacks": "off",
   "max-params": "off",
   "max-statements": "off",
+  "multiline-comment-style": "off",
   "multiline-ternary": "off",
   "newline-after-var": "off",
   "newline-before-return": "off",
@@ -126,6 +131,8 @@
     }
   ],
   "prefer-destructuring": "off",
+  "prefer-named-capture-group": "off",
+  "prefer-object-spread": "off",
   "prefer-reflect": "off",
   "prefer-template": "off",
   "quote-props": "off",
@@ -134,6 +141,7 @@
     "single"
   ],
   "require-jsdoc": "off",
+  "require-unicode-regexp": "off",
   "semi": [
     2,
     "always"

@@ -7,19 +7,15 @@ const assert = require('assert');
 const standard = require('eslint-config-standard');
 const stringify = require('json-stable-stringify');
 const override = require('./override.json');
-const defaults = require('eslint/conf/eslint-recommended.js');
+const defaults = require('eslint/lib/rules');
 
 fs.writeFileSync('override.json',
   stringify(override, { space: 2 }) + '\n'
 );
 
-const rulesList = Object.keys(defaults.rules);
+const rulesList = Array.from(defaults.keys());
 const overrideList = Object.keys(override);
-
-for (const o of overrideList) {
-  assert(rulesList.indexOf(o) >= 0,
-    o + ' not found in rulesList');
-}
+assert.deepEqual(overrideList, overrideList.slice().sort());
 
 const newRules = {};
 
@@ -32,6 +28,11 @@ for (const r of rulesList) {
   if (s && o === 'off') console.log(
     `WARN: Standard is not expected to be stricter: ${r}=${s}`);
   newRules[r] = o || s || 'error';
+}
+
+for (const r of overrideList) {
+  if (!rulesList.includes(r))
+    assert(false, `There is no such rule ${r}`);
 }
 
 standard.rules = newRules;
